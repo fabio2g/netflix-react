@@ -2,13 +2,8 @@
     margin-bottom: 30px;
 }
 
-.movie--box {
-    border: 1px solid red;
-
-}
-.movie--title {
+.movieRow h2 {
     margin: 0 0 8px 30px;
-
 }
 
 .movieRow--listarea {
@@ -17,7 +12,7 @@
 }
 
 .movieRow--list {
-    width: 99999999px;
+    transition: all ease 1s;
 }
 
 .movieRow--item {
@@ -40,9 +35,9 @@
 .movieRow--left,
 .movieRow--right {
     position: absolute;
-    width: 40px;
+    width: 80px;
     height: 300px;
-    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
     z-index: 99;
     display: flex;
     align-items: center;
@@ -52,6 +47,17 @@
     transition: all ease 1s;
 }
 
+.movieRow--left span {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    padding: 15px 8px 15px 20px;
+}
+
+.movieRow--right span {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    padding: 15px 15px 15px 15px;
+}
 
 .movieRow--left {
     left: 0;
@@ -65,5 +71,3 @@
 .movieRow:hover .movieRow--right {
     opacity: 1;
 }
-
-

@@ -52,10 +52,20 @@ export default () => {
                 ))}
             </section>
             <footer>
-                Feito por Fabio Silva<br/>
-                Direitos de imagens para Netflix<br/>
+                Feito por Fabio Silva
+                <br />
+                Direitos de imagens para Netflix
+                <br />
                 Dados da API Themoviedb.org
             </footer>
+            {moveList.length <= 0 && (
+                <div className="loading">
+                    <img
+                        src="https://media.filmelier.com/noticias/br/2020/03/Netflix_LoadTime.gif"
+                        alt="carregando"
+                    />
+                </div>
+            )}
         </div>
     );
 };
