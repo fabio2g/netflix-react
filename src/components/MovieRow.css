@@ -50,13 +50,13 @@
 .movieRow--left span {
     background: rgba(0, 0, 0, 0.6);
     border-radius: 50%;
-    padding: 15px 8px 15px 20px;
+    padding: 12px 8px 12px 15px;
 }
 
 .movieRow--right span {
     background: rgba(0, 0, 0, 0.6);
     border-radius: 50%;
-    padding: 15px 15px 15px 15px;
+    padding: 12px;
 }
 
 .movieRow--left {
@@ -70,4 +70,24 @@
 .movieRow:hover .movieRow--left,
 .movieRow:hover .movieRow--right {
     opacity: 1;
+}
+
+@media (max-width: 760px) {
+
+    .movieRow--listarea {
+        padding-left: 20px;
+    }
+
+    .movieRow--left,
+    .movieRow--right {
+        opacity: 1;
+    }
+
+    .movieRow--left span {
+        padding: 10px 5px 10px 12px;
+    }
+
+    .movieRow--right span {
+        padding: 10px;
+    }
 }

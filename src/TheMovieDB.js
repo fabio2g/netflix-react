@@ -19,7 +19,7 @@ export default {
             },
             {
                 slug: "trending",
-                title: "Recomendados pra você",
+                title: "Recomendados para você",
                 items: await apiFetch(
                     `/trending/all/week?language=pt-BR&api_key=${API_KEY}`
                 ),

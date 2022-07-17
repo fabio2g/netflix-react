@@ -52,11 +52,8 @@ export default () => {
                 ))}
             </section>
             <footer>
-                Feito por Fabio Silva
-                <br />
-                Direitos de imagens para Netflix
-                <br />
-                Dados da API Themoviedb.org
+                Deleveloper: Fabio | Direitos de Imagem: Netflix | API:
+                Themoviedb.org
             </footer>
             {moveList.length <= 0 && (
                 <div className="loading">

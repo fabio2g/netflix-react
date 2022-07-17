@@ -8,6 +8,10 @@ const FeaturedMovie = ({ item }) => {
     for (let prop in item.genres) {
         genres.push(item.genres[prop].name);
     }
+    let description = item.overview;
+    if (description.length > 300) {
+        description = description.substring(0, 300) + "...";
+    }
 
     return (
         <section
@@ -31,10 +35,20 @@ const FeaturedMovie = ({ item }) => {
                             {item.number_of_seasons !== 1 ? "s" : ""}
                         </div>
                     </div>
-                    <div className="featured--description">{item.overview}</div>
+                    <div className="featured--description">{description}</div>
                     <div className="featured--buttons">
-                        <a href={`/watch${item.id}`} className="featured--watchbutton">▶ Assistir</a>
-                        <a href={`/list/add/${item.id}`} className="featured--mylistbutton">+ Minha Lista</a>
+                        <a
+                            href={`/watch${item.id}`}
+                            className="featured--watchbutton"
+                        >
+                            ▶ Assistir
+                        </a>
+                        <a
+                            href={`/list/add/${item.id}`}
+                            className="featured--mylistbutton"
+                        >
+                            + Minha Lista
+                        </a>
                     </div>
                     <div className="featured--genres">
                         <strong>Gêneros:</strong> {genres.join(", ")}
