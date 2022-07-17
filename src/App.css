@@ -16,7 +16,7 @@ body {
 }
 
 footer {
-    margin: 50px 0;
+    margin: 50px 0px;
     text-align: center;
     color: #999;
 }
@@ -34,8 +34,36 @@ footer {
     align-items: center;
 }
 
+.social--media {
+    margin: 15px;
+}
+
+.social--media span {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.social--media a {
+    font-size: 28px;
+    color: #999;
+    margin: 10px;
+    transition: all ease 0.5s;
+}
+
+.social--media a:hover {
+    color: #D91921;
+}
+
 @media (max-width: 760px) {
+
+    footer {
+        font-size: 14px;
+    }
+
     .loading {
         left: -80px;
     }
+
 }

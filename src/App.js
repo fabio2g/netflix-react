@@ -52,8 +52,18 @@ export default () => {
                 ))}
             </section>
             <footer>
-                Deleveloper: Fabio | Direitos de Imagem: Netflix | API:
-                Themoviedb.org
+                <div className="social--media">
+                    <span>Resdes Sociais</span>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+    
+
+                </div>
+                <div>
+                    Deleveloper: Fabio | Direitos de Imagem: Netflix | API:
+                    Themoviedb.org
+                </div>
             </footer>
             {moveList.length <= 0 && (
                 <div className="loading">
