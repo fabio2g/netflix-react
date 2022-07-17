@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./MovieRow.css";
+import "../MovieRow/MovieRow.css";
 
 const MovieRow = ({ title, items }) => {
     const [scrollX, setScrollX] = useState(0);
@@ -46,6 +46,7 @@ const MovieRow = ({ title, items }) => {
                             <div className="movieRow--item">
                                 <img
                                     src={`http://image.tmdb.org/t/p/w300${item.poster_path}`}
+                                    alt="#"
                                 />
                             </div>
                         ))}

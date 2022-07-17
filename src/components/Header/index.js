@@ -3,7 +3,7 @@ import "../Header/Header.css";
 
 const Header = ({ black }) => {
     return (
-        <header className={black == true ? "black" : ""}>
+        <header className={black === true ? "black" : ""}>
             <div className="header--logo">
                 <a href="">
                     <img
@@ -14,7 +14,10 @@ const Header = ({ black }) => {
             </div>
             <div className="header--user">
                 <a href="#">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png?20201013161117" alt="avatar" />
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png?20201013161117"
+                        alt="avatar"
+                    />
                 </a>
             </div>
         </header>

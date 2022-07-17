@@ -1,12 +1,12 @@
 import "./App.css";
 
 import { useEffect, useState } from "react";
-import MovieRow from "./components/MovieRow";
 import TheMovie from "./TheMovieDB";
+import MovieRow from "./components/MovieRow";
 import FeaturedMovie from "./components/FeaturedMovie";
 import Header from "./components/Header";
 
-export default () => {
+function App() {
     const [moveList, setModieList] = useState([]);
     const [featuredData, setFeaturedData] = useState(null);
     const [blackHeader, setBlackHeader] = useState(false);
@@ -15,7 +15,7 @@ export default () => {
         const loadAll = async () => {
             let list = await TheMovie.getHomeList();
             setModieList(list);
-            //get featured
+
             let originals = list.filter((i) => i.slug === "originals");
             let randomChosen = Math.floor(
                 Math.random() * (originals[0].items.results.length - 1)
@@ -53,15 +53,19 @@ export default () => {
             </section>
             <footer>
                 <div className="social--media">
-                    <span>Resdes Sociais</span>
-                    <a href=""><i class="fa-brands fa-github"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                    <a href=""><i class="fa-solid fa-envelope"></i></a>
-    
-
+                    <span>Redes Sociais</span>
+                    <a href="https://github.com/fabiodev88">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/fabiosilva88/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/_fabiosv/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
                 </div>
                 <div>
-                    Deleveloper: Fabio | Direitos de Imagem: Netflix | API:
+                    Developer: Fabio Silva | Direitos de Imagem: Netflix | API:
                     Themoviedb.org
                 </div>
             </footer>
@@ -75,4 +79,6 @@ export default () => {
             )}
         </div>
     );
-};
+}
+
+export default App;

@@ -1,5 +1,5 @@
 import React from "react";
-import "./FeaturedMovie.css";
+import "../FeaturedMovie/FeaturedMovie.css";
 
 const FeaturedMovie = ({ item }) => {
     let firstDate = new Date(item.first_air_date);

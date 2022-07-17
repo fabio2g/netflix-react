@@ -16,7 +16,7 @@ body {
 }
 
 footer {
-    margin: 50px 0px;
+    margin: 80px 0px;
     text-align: center;
     color: #999;
 }
@@ -43,7 +43,6 @@ footer {
     margin-bottom: 15px;
     font-size: 18px;
     font-weight: bold;
-
 }
 .social--media a {
     font-size: 28px;
@@ -53,11 +52,10 @@ footer {
 }
 
 .social--media a:hover {
-    color: #D91921;
+    color: #d91921;
 }
 
 @media (max-width: 760px) {
-
     footer {
         font-size: 14px;
     }
@@ -65,5 +63,4 @@ footer {
     .loading {
         left: -80px;
     }
-
 }
